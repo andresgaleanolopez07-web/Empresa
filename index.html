@@ -146,8 +146,9 @@ nav a:hover {
 </section>
 
 <footer>
-    <p>© 2026 Nombre de la Empresa</p>
+    <p>© <span id="year"></span> Gervicios y Soluciones GyG</p>
 </footer>
+
 
 <a href="https://api.whatsapp.com/send?phone=50662690508&text=Hola,%20quiero%20información%20sobre%20sus%20servicios"
    class="whatsapp" target="_blank">
@@ -155,5 +156,8 @@ nav a:hover {
 </a>
 
 
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
