@@ -103,14 +103,25 @@
         }
 
         /* RESPONSIVE */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 26px;
-            }
+       @media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
 
-            section h2 {
-                font-size: 22px;
-            }
+    section h2 {
+        font-size: 22px;
+    }
+
+    /* 👇 AGREGA ESTO */
+    .header-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 70px;
+    }
+}
         }
    nav {
     background-color: #07314d;
@@ -187,22 +198,40 @@ nav a:hover {
 section p {
     margin-bottom: 15px; /* agrega espacio entre párrafos */
 }
+.header-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 
+    max-width: 900px;
+    margin: auto;
+}
+
+.logo {
+    width: 80px;
+}
  </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Servicios y Soluciones GyG</h1>
+   <div class="header-contenido">
+    <img src="https://andresgaleanolopez07-web.github.io/Empresa/logo.png" alt="Logo GyG" class="logo">
 
-    <p class="frase-principal">
-        Limpieza y restauraciones profesionales para tu hogar o tu empresa
-    </p>
+    <div>
+        <h1>Servicios y Soluciones GyG</h1>
 
-    <p class="frase-secundaria">
-        Atención rápida • Calidad garantizada • Precios justos
-    </p>
+        <p class="frase-principal">
+            Limpieza y restauraciones profesionales para tu hogar o tu empresa
+        </p>
+
+        <p class="frase-secundaria">
+            Atención rápida • Calidad garantizada • Precios justos
+        </p>
+    </div>
+</div>
 </header>
 
 <nav>
